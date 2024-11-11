@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        /* This is used to give a bg color to the nav bar  */
+        .navbar {
+            background-color: rgb(50, 2, 2);
+            border: 4px solid rgb(248, 226, 186);
+            border-radius: 20px;
+            margin: 5px 15px;
+            height: 59px;
+        }
+
+        /* This is used to avoid the bg color to get lost because when we do float, it gets overflowed from their parent. So after setting overflow to auto, bg color returns.  */
+        .navbar ul {
+            overflow: auto;
+        }
+
+        /* This is used to align the nav bars to the left. List-style is used to avoid the listing types like "a". */
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 10px 20px;
+        }
+
+        /* This is used to edit the padding for alignments and text-decoration means to remove the underlined hyperlink.  */
+        .navbar a {
+            padding: 0px 10px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover {
+            color: rgb(118, 235, 225);
+        }
+
+        .search {
+            padding: 4px 41px;
+            margin: 4px 4px;
+            text-align: right;
+
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 4px;
+            font-size: 12px;
+            padding-top: -5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Here we are creating a navigation bar, where we can see in the websites. So we keep thta in a listing form. We have kept anchor tag so that when we click on one of them, they open new tab.-->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Services</a></li>
+
+                <!-- This is used to insert the typing search button and placeholder is used to give a design on that.  -->
+                <div class="search">
+                    <input type="text" name="search" id="search" , placeholder="Search here">
+                </div>
+            </ul>
+        </nav>
+
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts in CSS</title>
+
+    <!-- Here we had imported the google font style through web, by pasting the code below: -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+        rel="stylesheet">
+    <style>
+
+        /* Here we have pasted that google font name "Josefin Sans" from web. If there is first font style, then our website will follow that style if not then, it follows another written styles. */
+        p {
+            font-family: "Josefin Sans", Georgia, 'Times New Roman', Times, serif;
+
+        /* This is for the font size which increase their size. */
+            font-size: 20px;
+
+        /* This is to increase the height from the first paragraph. em means the multiplication of parent font size  */
+            line-height: 2em;
+
+        }
+        span{
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        /* Here I used ID selector to just change the font of that one paragraph. */
+        #name{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h3>Welcome to Fonts.</h3>
+    <p>This is to know more about them.</p>
+    <p>We can learn about <span>font</span></p>
+    <p id="name">Hello this is Simona</p>
+</body>
+
+</html>

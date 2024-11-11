@@ -1,0 +1,5 @@
+/* This is to add the file as external css in the html file.  */
+p{
+    color: red;
+    background-color: aquamarine;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Bg in CSS</title>
+
+    <style>
+        /* Here we have changed the bg color to blue and set the height. To avoid the long parts of color, we use width to make it short. */
+        #first {
+            background-color: blue;
+            height: 100px;
+            width: 200px;
+        }
+
+        /* Here we used border style to give a style outside the bg and texts,
+        and we changed the color of it. Border radius is used to curve the corner of the border.  */
+        
+        #second {
+            background-color: aqua;
+            height: 100px;
+            width: fit-content;
+
+            /* We can also write these in one line: border:5px solid red;  */
+            border-width: 15px;
+            border-style: solid;
+            border-color: chocolate;
+            border-radius: 5px;
+        }
+
+        #third{
+            background-color: aqua;
+            height: 100px;
+            width: fit-content;
+            /* These are used to get either the right/ left/ top/ bottom border in the website. We can use rgb colors too. */
+            border-right: 5px solid blue;
+            border-left: 5px solid pink;
+            border-top: 5px solid purple;
+            border-bottom: 5px solid green;
+
+            /* Here we curved the corners of the border where we want to. */
+            border-top-left-radius: 10px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 7px;
+
+        }
+        #fourth{
+
+            height: 300px;
+            width: 400px;
+            /* Here we can also import the image from web for bg image.  */
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBRiwiVwWSn_bPxR0BKCJ_rT8tf3109RxEBQ&s');
+
+            /* No-repeat is used to avoid repetition of the images in the bg. Repear-x is used to repeat in x-axis while repeat-y will repeat in y-axis. */
+            background-repeat: no-repeat;
+            border: 4px solid purple;
+
+            /* This is used to set the image in the following positions */
+           background-position: center center;
+           
+           /* background-position: center right;
+           background-position: center left;
+           background-position: top center;
+           background-position: top right;
+           background-position: top left; */
+
+        }
+        
+
+
+    </style>
+</head>
+
+<body>
+    <h3>Welcome to my page</h3>
+    <p id="first">Here we will learn about them</p>
+    <p id="second">Here we will learn about them</p>
+    <p id="third">Here we will learn about them</p>
+    <p id="fourth">Here we will learn about them</p>
+
+</body>
+
+</html>

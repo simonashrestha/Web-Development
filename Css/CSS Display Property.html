@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property </title>
+    <style>
+        /* Display inline means how much size the element has, it will take that space. In display block, we can set the width of it.  */
+        /* This is used to set the width of the header in the center by keeping margin auto.  */
+        header {
+            border: 2px solid red;
+            margin: auto;
+            width: 1194px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* This is used to set the size of photo. After we set the display to block, the image will not get aligned with the h3 but they will take how much space they require. */
+        img {
+            width: 70px;
+            display: block;
+            margin: auto;
+        }
+
+        h3 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0px;
+            text-align: center;
+
+        }
+
+        /* Here by keeping display: inline-block, the elements will not get overlapped and take the proper space required. */
+        .para {
+            background-color: beige;
+            border: 2px solid black;
+            margin: 0px;
+            padding: 20px;
+            display: inline-block;
+            width: 33%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Here we have created a header with the heading and an image.  -->
+    <header class="head">
+        <img src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"
+            alt="Image not found">
+        <h3>Welcome Guys</h3>
+
+    </header>
+    <div class="para">
+        <h4 class="heading">Names</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ea possimus quis, hic consectetur vero
+            dolor doloribus, ducimus molestiae corrupti, perferendis ut deserunt libero tempora recusandae incidunt
+            facilis quaerat sit alias? Ipsum, saepe? Dicta beatae omnis earum repellendus quisquam. Iusto?</p>
+    </div>
+    <div class="para">
+        <h4 class="heading">About</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ea possimus quis, hic consectetur vero
+            dolor doloribus, ducimus molestiae corrupti, perferendis ut deserunt libero tempora recusandae incidunt
+            facilis quaerat sit alias? Ipsum, saepe? Dicta beatae omnis earum repellendus quisquam. Iusto?</p>
+    </div>
+
+    <div class="para">
+        <h4 class="heading">About</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ea possimus quis, hic consectetur vero
+            dolor doloribus, ducimus molestiae corrupti, perferendis ut deserunt libero tempora recusandae incidunt
+            facilis quaerat sit alias? Ipsum, saepe? Dicta beatae omnis earum repellendus quisquam. Iusto?</p>
+    </div>
+</body>
+
+</html>

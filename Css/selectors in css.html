@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in css</title>
+
+    <style>
+        /*This is Element selector and this selects every elements of the html paragraph and border color them blue. */
+
+        p {
+            border: 2px solid blue;
+        }
+
+        /* This is ID Selector. It used to select one paragraph with that id to color your specific color to that one paragraph only by using #IDNAME */
+
+        #redpara {
+            color: red;
+        }
+
+        /* This is Class Selector. Here we have selected one of the multiple classes to change the bg color of the third paragraph. If we had used #idname then there would be no change.  */
+        .hello {
+            background-color: brown;
+        }
+
+        /* This is Group Selector which selects the name of the tags  */
+        footer, span {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS Selectors</h3>
+    <p>Here we can know about the selectors</p>
+
+    <!-- Here we gave id to this paragraph  -->
+    <p id="redpara">Here we can know about the selectors</p>
+
+    <p id="hi" class="bluebg hello">Here we can know about the selectors</p>
+
+    <span>This is span</span>
+    <footer>This is last line</footer>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline, Internal & External CSS</title>
+    
+    <!-- CSS is included in the head tags -->
+    
+    <!-- This is External css file. Whenever you edit or put the line afterwards, that color is shown in the website. But if we want the internal css color, then we can write !important in the end of the bg color. -->
+    <link rel="stylesheet" href="color.css">
+    
+    <!-- This is Internal CSS. If we keep inline css and internal, the website will show inline css edits. But if we remove it, we see internal css. -->
+    <style>
+        p {
+            color: rgb(70, 70, 192);
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- This is Inline CSS. Here we insert every styles in one line which is messy.-->
+    <!-- <h3 style="color: red; background-color: blue;">Here we start CSS</h3> -->
+    
+    <p>Here we start CSS</p>
+</body>
+
+</html>

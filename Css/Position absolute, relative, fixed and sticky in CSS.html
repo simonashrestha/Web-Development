@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position absolute, relative, fixed and sticky in CSS</title>
+
+    <!-- Here we have set the border, width, height and margin of the following boxes. Display: inline-block helps to keep the four boxes in one line. -->
+
+        <style>
+
+        .box{
+            border: 2px solid green;
+            background-color: #f4dada;
+            height: 1333px;
+        }
+        .class {
+            border: 2px solid purple;
+            width: 150px;
+            height: 150px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        /* In static position, it is a default one which does not give any differences.  */
+
+        /* In relative position, when we set top 8px, then the box will move relative to its original position from the top with 8px. This will leave a gap in the orginal position. */
+        #third{
+            position: relative;
+            top: 8px;
+        }
+
+        /* In absolute position, the box will get overlapped with the other boxes according to the top, left or right pixels we give. This will not leave a gap. It will move and shifts with its first parent class. */
+        #fourth{
+            position: absolute;
+            top: 5px;
+            left: 122px;
+        }
+
+        /* In fixed position, when we set the box at right or left, and increase the height of the parent class, that box doesnot get lost while scrolling. It remains fixed in one position. */
+        #fifth{
+            position: fixed;
+            right: 12px;
+            bottom: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            
+        }
+
+        /* In sticky position, the box remains in the top at 5px where we had set, and while we scroll it also appears the same way. This is used in navigation menu in the websites. */
+        #sixth{
+            position: sticky;
+            top: 5px;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <div class="class" id="first">one</div>
+        <div class="class" id="second">two</div>
+        <div class="class" id="third">three</div>
+        <div class="class" id="fourth">four</div>
+        <div class="class" id="fifth">fifth</div>
+        <div class="class" id="sixth">six</div>
+    </div>
+</body>
+
+</html>

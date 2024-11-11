@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Links and Buttons</title>
+    <style>
+        .first{
+            border: 2px solid rgb(81, 48, 95);
+            padding: 34px;
+            margin: 33px auto;
+            width: 700px;
+            background-color: #f6cec2b2;
+        }
+
+        /* This is to decorate the Read more button. If we put none to the text decoration, the underlined style will be removed.  */
+        a{
+            text-decoration: none;
+        }
+        
+        /* This is used to change the bg color if we have visited the website already */
+        a:visited{
+            background-color: rgb(237, 196, 146);
+        }
+
+        /* This is to change the color while we select the particular button  */
+        a:active{
+            background-color: chocolate;
+        }
+
+        /* Class hover is used to give a small effect while we hover in the options to click */
+        .button:hover{
+            color: #200c0c;
+            background-color: rgb(156, 247, 247);
+            border: 2px solid black;
+        }
+        
+        .button{
+            background-color: #f39b9b;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="para" class="first">
+        <h3>Welcome to the Page</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius ab voluptatibus quod expedita alias. Eveniet
+            id quas itaque atque, iste quasi accusantium impedit doloremque? Magnam molestias numquam accusamus
+            voluptate non excepturi perferendis fugit sit culpa! Fuga quae unde perferendis doloremque.</p>
+            
+            <!-- here we have created two buttons where one is for read more link type button and another is for Contact us.  -->
+            <a href="https://tiktok.com" class="button">Read more</a>
+            <button class="button">Contact us</button>
+        </div>
+   
+</body>
+
+</html>

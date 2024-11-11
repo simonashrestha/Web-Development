@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment, Float and Clear</title>
+   
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+
+        body{
+            font-family: "Quicksand", sans-serif;
+        }
+        .first{
+
+            /* We can change the width and use margin auto to adjust and keep in the center through yx axis  */
+            width: 900px;
+            border: 2px solid rgb(142, 236, 142);
+            margin: 22px auto;
+            background-color: #f1d7c0;
+        }
+
+        .menu{
+            border: 2px solid rgb(85, 34, 85);
+            margin: 33px 22px;
+            padding: 21px 9px;
+            background-color: #b5d0ea;
+        }
+        #food{
+
+            /* float is used to align the paragraph to the left of the margin  */
+            float: left;
+            width: 40%;
+            border-radius: 5px;
+        }
+
+        #drinks{
+            /* float is used to align the paragraph to the right of the margin  */
+            float: right;
+            width: 40%;
+        }
+
+        #dessert{
+            /* clear is used to ignore the float right/left and does not allow to neglect them by overlapping the paragraphs. If we have written float: right then it should be clear: right otherwise both will be left. */
+            clear: both;
+            width: 90%;
+        }
+
+        p{
+
+            /* This is used to align the paragraphs to the left and justify means to adjust it to the straight lines.  */
+            text-align: left;
+            text-align: justify;
+        }
+
+        h3{
+            text-align: center;
+        }
+
+        h2{
+            margin: 33px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Here we have created whole class named first and inside that, we have three paragraphs with the same class name "menu".  -->
+    <div class="first">
+        <h2>Take a look on our Menu!</h2>
+
+        <!-- We set the different IDs so that we can select one of the paragraphs which we want to edit -->
+        <div id="food" class="menu">
+            <h3>Food</h3>
+            <p id="chowmein" class="hi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, sit doloremque? Perferendis minima sit soluta eius non optio tenetur dicta, explicabo illo quia eveniet ad repudiandae reprehenderit laboriosam! Perspiciatis, corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente hic praesentium ab eligendi voluptate magnam consequuntur consectetur nisi rerum tempora.</p>
+        </div>
+
+        <div id="drinks" class="menu">
+            <h3>Drinks</h3>
+            <p id="Lemonade" class="hi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, sit doloremque? Perferendis minima sit soluta eius non optio tenetur dicta, explicabo illo quia eveniet ad repudiandae reprehenderit laboriosam! Perspiciatis, corporis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque dolores quo placeat officia voluptatum exercitationem, ex corporis accusamus officiis laboriosam!</p>
+        </div>
+
+        <div id="dessert" class="menu">
+            <h3>Dessert</h3>
+            <p id="icecream" class="hi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, sit doloremque? Perferendis minima sit soluta eius non optio tenetur dicta, explicabo illo quia eveniet ad repudiandae reprehenderit laboriosam! Perspiciatis, corporis.</p>
+        </div>
+
+        <div id="glasses" class="menu">
+            <h3>Glasses</h3>
+            <p id="wineglass" class="hi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, sit doloremque? Perferendis minima sit soluta eius non optio tenetur dicta, explicabo illo quia eveniet ad repudiandae reprehenderit laboriosam! Perspiciatis, corporis.</p>
+        </div>
+    </div>
+</body>
+
+</html>

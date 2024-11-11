@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input Tags</title>
+</head>
+<!-- Here we have used backend.php to store our form. We use label so that it will be easy for us to click on Name tag to write a form. Similary, we have created form for age with div tag which helps to break the line like br tag.  -->
+
+<body>
+    <h2>Please fill up the form</h2>
+    <form action="backend.php">
+        <label for="name">Name</label>
+
+        <div>
+            <input type="text" name="myName" id="name">
+
+        </div>
+        <br>
+        <label for="age">Age</label>
+        <div>
+            <input type="text" name="myAge" id="age">
+
+        </div>
+        <br>
+        <!-- Here we have used date input type for readymade date calender -->
+        <label for="DOB">DOB</label>
+        <div>
+            <input type="date" name="MyDOB" id="DOB">
+        </div>
+        <!-- Here we have included Email input type so that every characters should be included. Here also we used label where the type name should be same as id name.-->
+        <br>
+        <label for="Email">Email</label>
+        <div>
+            <input type="email" name="myEmail" id="Email">
+
+        </div>
+
+        <br>
+        <!-- Here we have used checkbox input type and "checked" is used to keep the boxes checked by default. -->
+         
+        <div>
+            Are you eligible?: <input type="checkbox" name="MyEligibility" checked>
+
+        </div>
+        <br>
+        <!-- Here we have used radio input type to either tick in one of the option like gender which is male and female or other  -->
+        <label for="gender">Gender</label>
+        <div>
+            Male <input type="radio" name="MyGender" id="gender"> Female <input type="radio" name="MyGender" id="gender">Other<input
+                type="radio" name="MyGender" id="gender">
+
+        </div>
+        <br>
+        <!-- Here we used text area to write some paragraphs -->
+        <label for="you">Write about yourself</label>
+        <div>
+            <textarea name="MyTextArea" id="you"></textarea>
+
+        </div>
+
+        <br>
+        <!-- Here we have used submit input type to submit the form and reset type to reset the data of the form. -->
+
+        <div>
+            <label for="country">Country</label>
+            <select name="mycountry" id="country">
+                <option value="Nepal">Nepal</option>
+                <option value="India">India</option>
+                <option value="China">China</option>
+
+            </select>
+
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+
+    </form>
+</body>
+
+</html>

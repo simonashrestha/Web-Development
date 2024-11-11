@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model, Margin and Padding in CSS</title>
+
+    <style>
+        /* This is used to set the width of the border permanent for all the elements. Keeping 0 as margin and padding is default. */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Here padding is used to set the elements however we want to according to the border part. Margin comes outside the padding.  */
+        .Learn {
+            color: rgb(4, 20, 35);
+            background-color: rgb(124, 224, 224);
+            border: 4px solid rgb(66, 14, 53);
+            border-radius: 20px;
+            width: 300px;
+            /* This is a basic way for padding:  */
+            /* padding-top: 20px;
+            padding-right: 40px;
+            padding-bottom: 12px;
+            padding-left: 15px; */
+
+            /* For padding and margins, we can write in one line which follow top-right-bottom-left (TRBL) where top and bottom changes in y-axis and right and left changes in x-axis. We can also increase decrease them to see how it looks by inspect.*/
+            padding: 20px 40px 12px 70px;
+            margin: 17px 16px 11px 16px;
+
+            /* Box-sizing is used to set the border width same of how much we have written without letting it change through padding or margins. */
+            box-sizing: border-box;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Let's Learn</h3>
+    <p>Welcome to our page</p>
+
+    <div class="Learn">
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quidem autem architecto ut ea
+            aliquid? Nesciunt, iste temporibus nam enim quam, officiis expedita ipsum nulla omnis, qui quibusdam sit
+            reiciendis!</p>
+    </div>
+
+    <div class="Learn">
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quidem autem architecto ut ea
+            aliquid? Nesciunt, iste temporibus nam enim quam, officiis expedita ipsum nulla omnis, qui quibusdam sit
+            reiciendis!</p>
+    </div>
+
+    <div class="Learn">
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quidem autem architecto ut ea
+            aliquid? Nesciunt, iste temporibus nam enim quam, officiis expedita ipsum nulla omnis, qui quibusdam sit
+            reiciendis!</p>
+    </div>
+</body>
+
+</html>
