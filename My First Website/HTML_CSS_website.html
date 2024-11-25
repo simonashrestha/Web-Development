@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simona Fashion Wares</title>
+    <link rel="stylesheet" href="My First Website/css.css">
+    
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: url('img.jpg');
+        background-size:100%;
+    }
+
+    .left{
+        border: 2px solid red;
+        display: inline-block;
+        position: absolute;
+        left: 30px;
+        top: 6px;
+    }
+    .center{
+        border: 2px solid blue;
+        width: 33%;
+        position: relative;
+        display: block;
+        margin: 6px auto;
+        
+    }
+    .right{
+        border: 2px solid green;
+        display: inline-block;
+        position: absolute;
+        right: 27px;
+        top: 6px;
+    }
+
+    .navbar{
+        list-style: none;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .navbar li{
+        display: inline-block;
+        
+    }
+    
+    .navbar li a{
+        text-decoration: none;
+        color: rgb(9, 39, 39);
+        padding: 15px 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+    }
+
+    .navbar li a:hover, .navbar li a:active{
+        text-decoration: underline;
+        color: brown;
+    }
+
+    img{
+        width: 44px;
+    }
+
+    .btn{
+        border: 2px solid rgb(62, 17, 62);
+        border-radius: 4px;
+        padding: 1px 3px;
+        margin: 3px 1px;
+        font-size: 12px;
+        background-color: #baddee;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        cursor: pointer;
+    }
+
+    .btn:hover{
+    
+        background-color: #c1eaa1;
+    }
+
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img2.webp" alt="">
+        </div>
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Services</a></li>
+
+            </ul>
+
+        </div>
+        <div class="right">
+            <button class="btn">Location</button>
+            <button class="btn">Contact Us</button>
+
+
+        </div>
+
+    </header>   
+    
+</body>
+</html>
