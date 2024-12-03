@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-index</title>
+    <style>
+        .box {
+            width: 140px;
+            height: 140px;
+        }
+
+        #box1 {
+            border: 2px solid green;
+            background-color: blue;
+
+
+        }
+
+        #box2 {
+            border: 2px solid rgb(101, 175, 101);
+            background-color: red;
+
+            /* If we do visibility hidden, then the box will not be shown but its place will be reserved.  */
+            /* visibility: hidden; */
+
+            /* if we set display to none then, the space will also disappear with the box.  */
+            display: none;
+        }
+
+        /* When we use z-index, then the positions of the boxes should be either relative, absolute, fixed or sticky. Because static is the defualt one. Also, before, box4 was on the top of the box3 while overlapping. But after we set z-index of box3 greater than box4, then the box3 will come front while overlapping. */
+        #box3 {
+            border: 2px solid rgb(77, 224, 237);
+            background-color: green;
+            position: relative;
+            top: 40px;
+            z-index: 40;
+        }
+
+        #box4 {
+            border: 2px solid rgb(123, 34, 191);
+            background-color: orange;
+            position: relative;
+            top: 40px;
+            z-index: 33;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+
+</body>
+
+</html>
