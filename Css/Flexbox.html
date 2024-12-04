@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        /* If we set display into flex, then the whole boxes will come in the same line according to its margin and paddings or height and width.  */
+        .class {
+            height: 550px;
+            width: 100%;
+            border: 2px solid black;
+
+            /* Here we have set display as flex where it is called as flex class.  */
+            display: flex;
+
+            /* Flex properties: 
+            a. If we set the flex-direction to row then this is default.
+            b. If we set the flex-direction to column then the boxes will be viewed in the column-wise. 
+            c. If we set the flex-direction to row-reverse then the boxes will start from thr right side with the first box.
+            d. If we set the flex-direction to column-reverse then the boxes will start from the down side with the first box.  */
+
+            flex-direction: row;
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+
+            /* a. flex-wrap: wrap: This helps to wrap the elements after we inspect and click on the responsive and drag them. 
+            b. flex-wrap: wrap-reverse: This wraps the elements from the bottom after we click on the responsive by inspecting.*/
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+
+            /* flex-flow: row-reverse wrap; This is used to set the flex direction and flex wrap at one time. */
+
+
+
+            justify-content: center;
+            /* This is used to keep spaces between the boxes.  */
+            justify-content: space-between;
+            /* This is used to align the boxes equally between the boxes.  */
+            justify-content: space-evenly;
+            /* This is used to equalize the spaces in left and right of each boxes. 
+            justify-content: space-around; */
+
+            /* This is used to set the boxes in center vertically */
+            align-items: center;
+            /* This is used to set the boxes in the bottom center  */
+            align-items: flex-end;
+            /* This is default */
+            align-items: flex-start;
+            /* This is used to evenly set the boxes according to the width and height even though we wrap */
+            align-items: stretch;
+        }
+
+        .container {
+            background-color: orange;
+            border: 2px solid blue;
+            margin: 10px;
+            padding: 5px;
+            width: 90px;
+            height: 70px;
+
+        }
+
+        #box1 {
+
+            /* Higher the order, its place will be at the last and you can change its order.  */
+            order: 2;
+            flex-grow: 25;
+            flex-shrink: 2;
+        }
+
+        #box2 {
+            order: 3;
+            flex-grow: 3;
+            /* If we set the flex-shrink then, the higher the flex grow, the faster it gets smaller.  */
+            flex-shrink: 3;
+
+        }
+
+        #box3 {
+            /* If we set flex-grow when flex-direction is row, then it control the width. But if the flex-direction is column, then it will control height.  */
+            flex-grow: 250;
+
+        }
+
+        #box4 {
+            /* This is used to set the particular box either to center, or bottom or start.  */
+            align-self: center;
+            align-self: flex-start;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- We have created six boxes with the classes where class is the class of all the boxes and container is the class of each of the boxes.  -->
+    <div class="class">
+        <div class="container" id="box1">First</div>
+        <div class="container" id="box2">Second</div>
+        <div class="container" id="box3">Third</div>
+        <div class="container" id="box4">Fourth</div>
+        <div class="container" id="box5">Fifth</div>
+        <div class="container" id="box6">Sixth</div>
+    </div>
+
+</body>
+
+</html>
