@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+
+    <style>
+        /* In order to test our media query, we have to set display to none.  */
+        .box {
+            background-color: aquamarine;
+            color: black;
+            text-align: center;
+            font-size: 30px;
+            display: none;
+        }
+
+        /* This is the syntax for media query. We have set it in a way that the display of box1 should be block until the width up to 300px. If we donot write min-width then it is set to 0px. We write "only screen" so that whenever we view it in the page, it displays in only in the respected screen.*/
+        @media only screen and (max-width: 300px) {
+            #box1 {
+                display: block;
+                background-color: #e8bcbc;
+            }
+        }
+
+        /* This is the syntax for media query. We have set it in a way that the display of box2 should be block with min width from 300px to 500px.  */
+        @media only screen and (min-width: 300px) and (max-width: 500px) {
+            #box2 {
+                display: block;
+                background-color: #93dbbb;
+            }
+        }
+
+        /* This is the syntax for media query. We have set it in a way that the display of box3 should be block with min width from 500px to 800px.  */
+        @media only screen and (min-width: 500px) and (max-width: 800px) {
+            #box3 {
+                display: block;
+                background-color: #b884ea;
+            }
+        }
+
+        /* If we donot set max-width, it will be infinite.  */
+        @media only screen and (min-width: 800px) {
+            #box4 {
+                display: block;
+                background-color: #e8a8d8;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">Iphone</div>
+    <div class="box" id="box2">Tablet</div>
+    <div class="box" id="box3">Laptop</div>
+    <div class="box" id="box4">Viewscreen Computer</div>
+</body>
+
+</html>
