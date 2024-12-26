@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More selectors in CSS</title>
+
+    <style>
+
+        /* This is a simple element selector.  */
+        h3{
+            background-color: aquamarine;       
+        }
+
+        /* This helps to select every paragraphs inside div only  */
+        div p{
+            background-color: darkkhaki;
+        }
+
+        /* This helps to select the paragraphs inside div and inside list.  */
+        div li p{
+            background-color: blue;
+        }
+
+        /* This helps to select the direct paragraphs inside div. */
+        /* div > p{
+            background-color: orange;
+        } */
+
+        /* This is used to select the paragraph whose previous sibling is div.  */
+        div + p{
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <h3>More on Selectors</h3>
+    <div class="class">
+        <div class="first">
+            <ul>
+                <li class="hello"><p>I like to sing</p></li>
+
+                <!-- Since we have not included any paragraphs here inside li, then it will not get selected.  -->
+                <li>This will not get affected</li>
+
+                <!-- Since this paragraph is inside ul, it will not be selected under div > p  -->
+                <p>Another thing</p>
+            </ul>
+            
+        </div>
+        <p>Hi this is Simona.</p>
+    </div>
+    <p>This is another</p>
+</body>
+</html>

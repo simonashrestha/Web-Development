@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes & nth child pseudo selectors</title>
+    <style>
+        /* This helps to select the particular text whose input type is text using pseudo selectors'[]' */
+        input[type='text'] {
+            background-color: rgb(65, 49, 49);
+            padding: 22px;
+        }
+
+        /* This helps to select the particular email whose input type is email using pseudo selectors'[] */
+        input[type='email'] {
+            background-color: rgb(213, 231, 165);
+            padding: 10px;
+        }
+
+        .first {
+
+            /* We set the display to block, if we need to set the width and auto margin will automatically center it.  */
+            display: block;
+            width: 200px;
+            margin: auto;
+
+        }
+
+        /* This helps to select the specific attribute where we have set the target for the website  */
+        a[target] {
+            background: rgb(190, 173, 206);
+        }
+
+        /* This helps to set the css of the specific self target.  */
+        a[target='_self'] {
+            background: rgb(146, 235, 157);
+            font-size: 22px;
+        }
+
+        .heading{
+            background-color: beige;
+          
+        }
+
+        /* This select the third child of the list and apply the CSS on it only  */
+        li:nth-child(3){
+            color: coral;
+        }
+
+        /* This selects every two children with the even formula 2n+0 to apply the CSS. Similarly we can apply to the odd children too. */
+        li:nth-child(2n+0){
+            color: rgb(127, 6, 170);
+        }
+
+        /* This selects every odd children to apply CSS. We can do similar to even children too.  */
+        li:nth-child(odd){
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="first">
+        <h3><a href="http://google.com" target="_blank">Go to Google</a></h3>
+        <h3><a href="http://youtube.com" target="_self">Go to Youtube</a></h3>
+        <form action="" class="formoutput">
+            <input type="text" , placeholder="Enter your name">
+            <input type="email" , placeholder="Enter your email">
+            <input type="password" , placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="heading">First</li>
+            <li class="heading">Second</li>
+            <li class="heading">Third</li>
+            <li class="heading">Fourth</li>
+            <li class="heading">Fifth</li>
+            <li class="heading">Sixth</li>
+            <li class="heading">Seventh</li>
+            <li class="heading">Eighth</li>
+            <li class="heading">Ninth</li>
+            <li class="heading">Tenth</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
